@@ -22,27 +22,30 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AñadirEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AñadirDepartamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionarCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestionarHorarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarPermisosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarVacacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrosToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JornadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AsistenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InformeGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SeguridadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionDeRolesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestionDeOpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AsignarOpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AñadirEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AñadirDepartamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrarCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrarPermisosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrarVacacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionarHorarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JornadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AsistenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InformeGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GestionarCargosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,6 +71,24 @@ Partial Class Form1
         Me.OtrosToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.OtrosToolStripMenuItem.Text = "Editar"
         '
+        'AñadirEmpleadoToolStripMenuItem
+        '
+        Me.AñadirEmpleadoToolStripMenuItem.Name = "AñadirEmpleadoToolStripMenuItem"
+        Me.AñadirEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
+        Me.AñadirEmpleadoToolStripMenuItem.Text = "Gestionar empleado"
+        '
+        'AñadirDepartamentoToolStripMenuItem
+        '
+        Me.AñadirDepartamentoToolStripMenuItem.Name = "AñadirDepartamentoToolStripMenuItem"
+        Me.AñadirDepartamentoToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
+        Me.AñadirDepartamentoToolStripMenuItem.Text = "Gestionar Departamento"
+        '
+        'GestionarCargosToolStripMenuItem
+        '
+        Me.GestionarCargosToolStripMenuItem.Name = "GestionarCargosToolStripMenuItem"
+        Me.GestionarCargosToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
+        Me.GestionarCargosToolStripMenuItem.Text = "Gestionar cargos"
+        '
         'OtrosToolStripMenuItem1
         '
         Me.OtrosToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdministrarCargosToolStripMenuItem, Me.AdministrarPermisosToolStripMenuItem, Me.AdministrarVacacionesToolStripMenuItem})
@@ -75,12 +96,55 @@ Partial Class Form1
         Me.OtrosToolStripMenuItem1.Size = New System.Drawing.Size(81, 20)
         Me.OtrosToolStripMenuItem1.Text = "Administrar"
         '
+        'AdministrarCargosToolStripMenuItem
+        '
+        Me.AdministrarCargosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarHorarioToolStripMenuItem})
+        Me.AdministrarCargosToolStripMenuItem.Name = "AdministrarCargosToolStripMenuItem"
+        Me.AdministrarCargosToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.AdministrarCargosToolStripMenuItem.Text = "Administrar cargos"
+        '
+        'GestionarHorarioToolStripMenuItem
+        '
+        Me.GestionarHorarioToolStripMenuItem.Name = "GestionarHorarioToolStripMenuItem"
+        Me.GestionarHorarioToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.GestionarHorarioToolStripMenuItem.Text = "Gestionar Horario"
+        '
+        'AdministrarPermisosToolStripMenuItem
+        '
+        Me.AdministrarPermisosToolStripMenuItem.Name = "AdministrarPermisosToolStripMenuItem"
+        Me.AdministrarPermisosToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.AdministrarPermisosToolStripMenuItem.Text = "Administrar Permisos"
+        '
+        'AdministrarVacacionesToolStripMenuItem
+        '
+        Me.AdministrarVacacionesToolStripMenuItem.Name = "AdministrarVacacionesToolStripMenuItem"
+        Me.AdministrarVacacionesToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.AdministrarVacacionesToolStripMenuItem.Text = "Administrar Vacaciones"
+        '
         'OtrosToolStripMenuItem2
         '
         Me.OtrosToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.JornadaToolStripMenuItem, Me.AsistenciaToolStripMenuItem, Me.InformeGeneralToolStripMenuItem})
         Me.OtrosToolStripMenuItem2.Name = "OtrosToolStripMenuItem2"
         Me.OtrosToolStripMenuItem2.Size = New System.Drawing.Size(35, 20)
         Me.OtrosToolStripMenuItem2.Text = "Ver"
+        '
+        'JornadaToolStripMenuItem
+        '
+        Me.JornadaToolStripMenuItem.Name = "JornadaToolStripMenuItem"
+        Me.JornadaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.JornadaToolStripMenuItem.Text = "Jornada"
+        '
+        'AsistenciaToolStripMenuItem
+        '
+        Me.AsistenciaToolStripMenuItem.Name = "AsistenciaToolStripMenuItem"
+        Me.AsistenciaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.AsistenciaToolStripMenuItem.Text = "Asistencia"
+        '
+        'InformeGeneralToolStripMenuItem
+        '
+        Me.InformeGeneralToolStripMenuItem.Name = "InformeGeneralToolStripMenuItem"
+        Me.InformeGeneralToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.InformeGeneralToolStripMenuItem.Text = "Informe general"
         '
         'SeguridadToolStripMenuItem
         '
@@ -111,81 +175,33 @@ Partial Class Form1
         'OpcionesToolStripMenuItem
         '
         Me.OpcionesToolStripMenuItem.Name = "OpcionesToolStripMenuItem"
-        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpcionesToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.OpcionesToolStripMenuItem.Text = "Opciones"
         '
         'AsignarOpcionesToolStripMenuItem
         '
         Me.AsignarOpcionesToolStripMenuItem.Name = "AsignarOpcionesToolStripMenuItem"
-        Me.AsignarOpcionesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AsignarOpcionesToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.AsignarOpcionesToolStripMenuItem.Text = "Asignar Opciones"
         '
-        'AñadirEmpleadoToolStripMenuItem
+        'TextBox1
         '
-        Me.AñadirEmpleadoToolStripMenuItem.Name = "AñadirEmpleadoToolStripMenuItem"
-        Me.AñadirEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
-        Me.AñadirEmpleadoToolStripMenuItem.Text = "Gestionar empleado"
+        Me.TextBox1.Location = New System.Drawing.Point(53, 75)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(227, 20)
+        Me.TextBox1.TabIndex = 1
         '
-        'AñadirDepartamentoToolStripMenuItem
+        'ContextMenuStrip1
         '
-        Me.AñadirDepartamentoToolStripMenuItem.Name = "AñadirDepartamentoToolStripMenuItem"
-        Me.AñadirDepartamentoToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
-        Me.AñadirDepartamentoToolStripMenuItem.Text = "Gestionar Departamento"
-        '
-        'AdministrarCargosToolStripMenuItem
-        '
-        Me.AdministrarCargosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarHorarioToolStripMenuItem})
-        Me.AdministrarCargosToolStripMenuItem.Name = "AdministrarCargosToolStripMenuItem"
-        Me.AdministrarCargosToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.AdministrarCargosToolStripMenuItem.Text = "Administrar cargos"
-        '
-        'AdministrarPermisosToolStripMenuItem
-        '
-        Me.AdministrarPermisosToolStripMenuItem.Name = "AdministrarPermisosToolStripMenuItem"
-        Me.AdministrarPermisosToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.AdministrarPermisosToolStripMenuItem.Text = "Administrar Permisos"
-        '
-        'AdministrarVacacionesToolStripMenuItem
-        '
-        Me.AdministrarVacacionesToolStripMenuItem.Name = "AdministrarVacacionesToolStripMenuItem"
-        Me.AdministrarVacacionesToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.AdministrarVacacionesToolStripMenuItem.Text = "Administrar Vacaciones"
-        '
-        'GestionarHorarioToolStripMenuItem
-        '
-        Me.GestionarHorarioToolStripMenuItem.Name = "GestionarHorarioToolStripMenuItem"
-        Me.GestionarHorarioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.GestionarHorarioToolStripMenuItem.Text = "Gestionar Horario"
-        '
-        'JornadaToolStripMenuItem
-        '
-        Me.JornadaToolStripMenuItem.Name = "JornadaToolStripMenuItem"
-        Me.JornadaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.JornadaToolStripMenuItem.Text = "Jornada"
-        '
-        'AsistenciaToolStripMenuItem
-        '
-        Me.AsistenciaToolStripMenuItem.Name = "AsistenciaToolStripMenuItem"
-        Me.AsistenciaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AsistenciaToolStripMenuItem.Text = "Asistencia"
-        '
-        'InformeGeneralToolStripMenuItem
-        '
-        Me.InformeGeneralToolStripMenuItem.Name = "InformeGeneralToolStripMenuItem"
-        Me.InformeGeneralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.InformeGeneralToolStripMenuItem.Text = "Informe general"
-        '
-        'GestionarCargosToolStripMenuItem
-        '
-        Me.GestionarCargosToolStripMenuItem.Name = "GestionarCargosToolStripMenuItem"
-        Me.GestionarCargosToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
-        Me.GestionarCargosToolStripMenuItem.Text = "Gestionar cargos"
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
@@ -218,4 +234,6 @@ Partial Class Form1
     Friend WithEvents JornadaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AsistenciaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InformeGeneralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class
